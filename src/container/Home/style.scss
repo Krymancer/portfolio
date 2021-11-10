@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  background-image: url('../../assets/home-bg.png');
+
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 30vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.home-name {
+  color: var(--light-text-color);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.home-label {
+  color: var(--light-text-color);
+}
+
+.home-label-text,
+.typed-cursor {
+  font-size: 1.5em;
+}

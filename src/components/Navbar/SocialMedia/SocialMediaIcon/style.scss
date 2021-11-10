@@ -1,0 +1,22 @@
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--social-links);
+
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-item:hover {
+  background-color: var(--social-links-highlight);
+}
+
+.social-item > a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  height: 1em;
+}

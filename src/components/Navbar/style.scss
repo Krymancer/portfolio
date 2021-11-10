@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: var(--dark-background);
+  height: 100vh;
+  // position: fixed;
+  align-items: center;
+
+  max-width: 300px;
+}

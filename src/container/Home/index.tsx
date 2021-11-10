@@ -1,4 +1,4 @@
-import React, {LegacyRef, useEffect, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import Typed from 'typed.js';
 
 import './style.scss';

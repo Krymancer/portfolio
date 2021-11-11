@@ -1,4 +1,6 @@
 .view {
   flex: 3;
+  min-height: min-content;
+  overflow: auto;
   // margin-left: 300px;
 }

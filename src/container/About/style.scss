@@ -2,21 +2,21 @@
   margin: 5em;
 }
 
-.about-avatar {
+.about-description {
   display: flex;
-  height: 15em;
-  width: 15em;
 }
 
-.container {
+.about-details-container {
   display: flex;
-  justify-content: space-between;
-  margin-right: 1em;
+  flex-direction: column;
+}
+
+.about-details-lists {
+  display: flex;
 }
 
 .about-details-list {
-  font-size: 0.6em;
-  width: 100%;
+  font-size: 0.1em;
 }
 
 .about-details-title {
@@ -24,6 +24,7 @@
   margin-bottom: 1em;
   font-size: 1.5em;
   color: var(--dark-text-color);
+  width: 100%;
 }
 
 .about-details-list-container {
@@ -32,18 +33,16 @@
 }
 
 .about-details-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin-right: 5em;
-}
+  margin-right: 1em;
 
-.about-details-list > li {
-  margin-bottom: 2em;
-}
+  li {
+    list-style-image: url('https://api.iconify.design/bi/chevron-right.svg');
+    margin-bottom: 1em;
 
-li {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  height: 1em;
+    div {
+      * {
+        font-size: 1.2em;
+      }
+    }
+  }
 }

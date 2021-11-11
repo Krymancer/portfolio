@@ -26,6 +26,10 @@
   transition: 1s;
 }
 
+.menu-active {
+  color: var(--menu-text-highlight);
+}
+
 .menu-active > svg,
 .navbar-menu-item:hover > svg {
   color: var(--menu-text-highlight);

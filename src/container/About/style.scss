@@ -1,0 +1,49 @@
+.about-div {
+  margin: 5em;
+}
+
+.about-avatar {
+  display: flex;
+  height: 15em;
+  width: 15em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+
+.about-details-list {
+  font-size: 0.6em;
+  width: 100%;
+}
+
+.about-details-title {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: var(--dark-text-color);
+}
+
+.about-details-list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-details-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: 5em;
+}
+
+.about-details-list > li {
+  margin-bottom: 2em;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 1em;
+}

@@ -6,12 +6,17 @@ import Menu from './Menu';
 import Profile from './Profile';
 import SocialMedia from './SocialMedia';
 
-const Navbar: React.FC = () => {
+interface props {
+  section: string;
+  setSection: (section: string) => void;
+}
+
+const Navbar: React.FC<props> = ({section, setSection}) => {
   return (
     <div className="navbar">
       <Profile />
       <SocialMedia />
-      <Menu />
+      <Menu section={section} setSection={setSection} />
     </div>
   );
 };

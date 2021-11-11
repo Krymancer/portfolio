@@ -14,19 +14,19 @@ interface props {
 
 function getSection(section: string) {
   switch (section) {
-    case 'About': {
+    case 'Sobre': {
       return <About />;
     }
-    case 'Curriculum': {
+    case 'Curriculo': {
       return <Curriculum />;
     }
     case 'Home': {
       return <Home />;
     }
-    case 'Protifolio': {
+    case 'Portifolio': {
       return <Protifolio />;
     }
-    case 'Contact': {
+    case 'Contato': {
       return <Contact />;
     }
     default: {

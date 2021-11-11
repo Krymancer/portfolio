@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
 
 import Navbar from '../../components/Navbar';
 import ViewArea from '../../container/ViewArea';
 
 const Main: React.FC = () => {
+  const [page, setPage] = useState<string>('Home');
   return (
     <div className="main">
-      <Navbar />
-      <ViewArea section="Home" />
+      <Navbar section={page} setSection={setPage} />
+      <ViewArea section={page} />
     </div>
   );
 };

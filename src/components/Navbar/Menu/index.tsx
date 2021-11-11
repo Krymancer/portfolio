@@ -7,15 +7,24 @@ const itens = [
   {text: 'Home', icon: 'bx-bx-home'},
   {text: 'Sobre', icon: 'bx-bx-user'},
   {text: 'Curriculo', icon: 'bx-bx-file-blank'},
-  {text: 'Protfolio', icon: 'bx-bx-book-content'},
+  {text: 'Portifolio', icon: 'bx-bx-book-content'},
   {text: 'Contato', icon: 'bx-bx-envelope'},
 ];
+interface props {
+  section: string;
+  setSection: (section: string) => void;
+}
 
-const Menu: React.FC = () => {
+const Menu: React.FC<props> = ({section, setSection}) => {
   return (
     <div className="navbar-menu">
       {itens.map(item => (
-        <MenuItem text={item.text} icon={item.icon} />
+        <MenuItem
+          text={item.text}
+          icon={item.icon}
+          setSection={setSection}
+          active={item.text === section}
+        />
       ))}
     </div>
   );

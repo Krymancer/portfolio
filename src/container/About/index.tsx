@@ -23,8 +23,8 @@ const ViewArea: React.FC = () => {
     for (let i = 0, j = size; i < j; i += chunk) {
       const temp = data.slice(i, i + chunk);
 
-      const itens = temp.map(item => (
-        <li>
+      const itens = temp.map((item, index) => (
+        <li key={index}>
           <div>
             <strong>{item.name}</strong>
             <span>{' ' + item.value}</span>
@@ -33,7 +33,7 @@ const ViewArea: React.FC = () => {
       ));
 
       lists.push(
-        <div className="about-details-list-container">
+        <div key={lists.length} className="about-details-list-container">
           <ul className="about-details-list">{itens.map(item => item)}</ul>
         </div>
       );

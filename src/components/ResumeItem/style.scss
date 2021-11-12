@@ -6,6 +6,7 @@
 
   &:last-child {
     padding-bottom: 0;
+    margin-bottom: 1em;
   }
 
   &:before {
@@ -21,6 +22,7 @@
   }
 
   h4 {
+    margin-top: 0;
     line-height: 1em;
     font-size: 1em;
     font-weight: 600;

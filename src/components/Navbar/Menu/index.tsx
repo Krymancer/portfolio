@@ -20,6 +20,7 @@ const Menu: React.FC<props> = ({section, setSection}) => {
     <div className="navbar-menu">
       {itens.map(item => (
         <MenuItem
+          key={item.text}
           text={item.text}
           icon={item.icon}
           setSection={setSection}

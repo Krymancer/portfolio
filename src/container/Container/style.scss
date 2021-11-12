@@ -1,6 +1,10 @@
-.view {
-  flex: 3;
+.container {
+  display: flex;
+
+  width: 100vw;
+
   min-height: min-content;
   overflow: auto;
+
   // margin-left: 300px;
 }

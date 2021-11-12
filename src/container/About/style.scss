@@ -1,5 +1,7 @@
 .about-div {
   margin: 5em;
+
+  animation: fadeIn 1s ease-out;
 }
 
 .about-description {
@@ -24,7 +26,6 @@
   margin-bottom: 1em;
   font-size: 1.5em;
   color: var(--dark-text-color);
-  width: 100%;
 }
 
 .about-details-list-container {

@@ -1,0 +1,22 @@
+.arrow-container {
+  cursor: pointer;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  opacity: 0.5;
+  transition: 1s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      color: #149ddd;
+    }
+  }
+}

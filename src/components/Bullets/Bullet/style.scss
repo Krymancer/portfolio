@@ -1,0 +1,52 @@
+:root {
+  --bullet-size-active: 1em;
+  --bullet-size-idle: 0.8em;
+}
+
+.bullet {
+  border-radius: 50%;
+  margin: 0.2em;
+  transition: 0.7s;
+}
+
+.idle {
+  height: var(--bullet-size-idle);
+  width: var(--bullet-size-idle);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  height: var(--bullet-size-active);
+  width: var(--bullet-size-active);
+  // background-color: rgba(255, 255, 255, 0.5);
+  background-color: #149ddd;
+  // border: #149ddd 1px solid;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

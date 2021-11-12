@@ -81,16 +81,19 @@ const jobData = [
 const ViewArea: React.FC = () => {
   return (
     <div className="resume-div">
-      <Title title="Curriculo" />
-      <p>
-        Exponho aqui minha formação academica e experiências profissionais.{' '}
-      </p>
+      <div className="resume-title-container">
+        <Title title="Curriculo" />
+        <p>
+          Exponho aqui minha formação academica e experiências profissionais.{' '}
+        </p>
+      </div>
 
       <div className="resume-container">
         <div>
           <h3 className="resume-title">Educação</h3>
-          {educationData.map(item => (
+          {educationData.map((item, index) => (
             <ResumeItem
+              key={index}
               title={item.title}
               start={item.start}
               end={item.end}
@@ -102,8 +105,9 @@ const ViewArea: React.FC = () => {
 
         <div>
           <h3 className="resume-title">Experiencia Profissional</h3>
-          {jobData.map(item => (
+          {jobData.map((item, index) => (
             <ResumeItem
+              key={index}
               title={item.title}
               start={item.start}
               end={item.end}

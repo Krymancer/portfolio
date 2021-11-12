@@ -1,18 +1,29 @@
 .resume-div {
-  margin: 5em;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
 }
 
 .resume-title {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   color: #050d18;
 }
 
-.resume-container {
-  display: flex;
-  justify-content: space-between;
+.resume-title-container {
+  margin-left: 5em;
+  margin-top: 5em;
 }
 
-.resume-container > div {
-  width: 100%;
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    padding: 1em;
+  }
 }

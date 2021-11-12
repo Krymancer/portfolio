@@ -35,8 +35,8 @@ function getSection(section: string) {
   }
 }
 
-const ViewArea: React.FC<props> = ({section}) => {
-  return <div className="view">{getSection(section)}</div>;
+const Container: React.FC<props> = ({section}) => {
+  return <div className="container">{getSection(section)}</div>;
 };
 
-export default ViewArea;
+export default Container;

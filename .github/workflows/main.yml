@@ -17,6 +17,7 @@ jobs:
         run: npm run build
       
       - name: gh-pages
-        run: git config --global user.name "CI"
-             git config --global user.email "ubuntu@latest"
-             npx gh-pages -d build
+        run: |
+          git config --global user.name "CI"
+          git config --global user.email "ubuntu@latest"
+          npx gh-pages -d build

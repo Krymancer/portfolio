@@ -18,6 +18,6 @@ jobs:
       
       - name: gh-pages
         run: |
-          git config --global user.name "CI"
-          git config --global user.email "ubuntu@latest"
+          git config --global user.name "krymancer"
+          git config --global user.email "junior.nascm@gmail.com"
           npx gh-pages -d build
